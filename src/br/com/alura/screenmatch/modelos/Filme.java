@@ -8,6 +8,11 @@ public class Filme extends Titulo implements Classificavel {
        public String getDiretor() {
               return diretor;}
 
+        //Criação de um constructor. Na main, agora a criação de um objeto deve seguir esse padrão.
+        public Filme(String nome, int anoDeLancamento) {
+           super(nome, anoDeLancamento);
+        }
+
        public void setDiretor(String diretor) {
               this.diretor = diretor;}
 
@@ -15,6 +20,11 @@ public class Filme extends Titulo implements Classificavel {
     @Override
     public int getClassificacao() {
         return (int) pegaMedia()/2;
+    }
+
+    @Override
+    public String toString() {
+        return "Filme: " + this.getNome() + " (" + this.getAnoDeLancamento() + ")";
     }
 }
 

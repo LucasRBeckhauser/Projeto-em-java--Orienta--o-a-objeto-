@@ -4,8 +4,8 @@ import br.com.alura.screenmatch.calculos.Classificavel;
 
 public class Episodio implements Classificavel {
     private int numero;
-    private String ;
-    private Serie serie;nome
+    private String nome;
+    private Serie serie;
     private int totalVisualizacoes;
 
     public int getTotalVisualizacoes() {

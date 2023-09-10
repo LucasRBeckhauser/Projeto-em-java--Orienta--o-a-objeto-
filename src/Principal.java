@@ -8,9 +8,10 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-    Filme meuFilme = new Filme();
-    meuFilme.setNome("O poderoso chefão");
-    meuFilme.setAnoDeLancamento(1970);
+    // Filme meuFilme = new Filme(); Deixa de ser usual em razão do constructor. O correto segue a baixo.
+
+        Filme meuFilme = new Filme("O poderoso chefão", 1970);
+    //meuFilme.setAnoDeLancamento(1970);
     meuFilme.setDuracaoEmMinutos(180);
 
     meuFilme.exibeFichaTecnica();
@@ -20,9 +21,9 @@ public class Principal {
         System.out.println("total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
 
-    Filme filme2 = new Filme();
-    filme2.setNome("Meu malvado Favorito");
-    filme2.setAnoDeLancamento(2020);
+    //Filme filme2 = new Filme(); Deixa de ser usual em razão do constructor. O correto segue a baixo. o comando do nome é apagado.
+        Filme filme2 = new Filme("Meu malvado Favorito", 2020);
+    //filme2.setAnoDeLancamento(2020);
     filme2.setDuracaoEmMinutos(180);
     filme2.avalia(5);
     filme2.avalia(8);
@@ -32,9 +33,9 @@ public class Principal {
         System.out.println("total de avaliações: " + filme2.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
+        //lost.setNome("Lost");
+       // lost.setAnoDeLancamento(2000);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
@@ -54,10 +55,11 @@ public class Principal {
         primeiro.setSerie(lost);
         primeiro.setTotalVisualizacoes(300);
 
-        Filme filmeDoPaulo = new Filme();
+        // Filme filmeDoPaulo = new Filme(); Deixa de ser usual em razão do constructor. O correto segue a baixo.
+        Filme filmeDoPaulo = new Filme("DogVille", 2003);
         filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.setNome("DogVille");
-        filmeDoPaulo.setAnoDeLancamento(2003);
+        //filmeDoPaulo.setNome("DogVille");
+        //filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
@@ -66,6 +68,8 @@ public class Principal {
         listaDeFilmes.add(filme2);
         System.out.println(" O tamanho da lista de filmes é " + listaDeFilmes.size());
         System.out.println(" O primeiro filme da lista é o " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
+
 
     }
 

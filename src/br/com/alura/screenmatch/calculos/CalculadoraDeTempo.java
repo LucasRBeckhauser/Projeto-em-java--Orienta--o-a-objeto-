@@ -19,8 +19,9 @@ public class CalculadoraDeTempo {
 // Da para usar a super classe, ao invés de usar elas separadas, como acima
 
 
-    public void inclui(Titulo t) {
-        tempoTotal += t.getDuracaoEmMinutos();}
+    public void inclui(Titulo titulo) {
+        System.out.println("Adicionando duração em minutos de " + titulo);
+        this.tempoTotal += titulo.getDuracaoEmMinutos();}
 
 }
 
