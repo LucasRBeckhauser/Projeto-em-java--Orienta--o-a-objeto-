@@ -4,8 +4,8 @@ Neste projeto eu aplico testes com diferente funcionalidades, no intuito de dese
 
 Por enquanto, foi trabalhado com: 
 
-1- Os quatro pilares da orientação a objeto. 
-2- Manipulação de listas de objetos.
-3- Consumo de APIs de sistemas externos para carregar dados no formato JSON.
+<p> 1- Os quatro pilares da orientação a objeto. </p>
+<p>2- Manipulação de listas de objetos.</p>
+<p>3- Consumo de APIs de sistemas externos para carregar dados no formato JSON.</p>
 
 
