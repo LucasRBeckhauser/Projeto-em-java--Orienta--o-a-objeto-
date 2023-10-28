@@ -1,6 +1,6 @@
 <h1> Projeto Curso de Orientação a Objeto- Java </h1>
 
-Neste projeto eu aplico testes com diferente funcionalidades, no intuito de desenvolver novas com competências em java.
+Neste projeto eu aplico testes com diferente funcionalidades, no intuito de desenvolver novas competências em java.
 
 Por enquanto, foi trabalhado com: 
 
