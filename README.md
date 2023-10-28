@@ -1,4 +1,4 @@
-<h1> Projeto Curso de Orientação a Objeto- Java </h1>
+<h1> Projeto Orientação a Objeto- Java </h1>
 
 Neste projeto eu aplico testes com diferente funcionalidades, no intuito de desenvolver novas competências em java.
 
