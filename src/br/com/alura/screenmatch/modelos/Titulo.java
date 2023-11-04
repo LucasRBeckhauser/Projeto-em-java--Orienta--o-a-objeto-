@@ -1,13 +1,12 @@
 package br.com.alura.screenmatch.modelos;
 
+import br.com.alura.screenmatch.excecao.ErroDeConversaodeAno;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable <Titulo> {
-    @SerializedName("Title")
-    //anotação para serializar a informação e informar que o string nome é identificado como Title
+
     private String nome;
 
-    @SerializedName("Year")
     private int anoDeLancamento;
 
     private boolean incluidoNoPlano;
@@ -24,7 +23,13 @@ public class Titulo implements Comparable <Titulo> {
         this.nome = meuTituloOmdb.title();
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
+
+        if (meuTituloOmdb.year().length() > 4) {
+        throw new ErroDeConversaodeAno("Erro relacionado ao ano. Digite apenas 4 caracteres.");
+        }
     }
+
+
 
     public String getNome() {
         return this.nome;
